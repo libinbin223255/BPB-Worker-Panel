@@ -199,9 +199,9 @@ export default {
                         });
 
                     default:
-                        
-                        url.hostname = 'www.speedtest.net';
-                        url.protocol = 'https:';
+                        // return new Response('Not found', { status: 404 });
+                       
+                       
                         request = new Request(url, request);
                         return await fetch(request);
                 }
